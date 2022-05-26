@@ -24,7 +24,7 @@ app.get("/about", (req, res) =>{
 });
 app.get("/post/:id", (req, res) =>{
 	console.log(req.params.id)
-	res.render("post");
+	res.render("post", {post:posts[req.params.id]});
 });
 app.get("/compose", (req, res) => {
 	res.render("compose")
