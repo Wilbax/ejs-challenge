@@ -7,7 +7,7 @@
 
 <% for(let i=0; i < data.length; i++){ %>
     <h1><%= data[i].title %></h1>
-    <%= data[i].content %>
+    <%= data[i].content.slice(0,100) %>... <a href="/post/<%= i %>">Read more</a>
 <% } %>
 </div>
 
