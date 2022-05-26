@@ -1,0 +1,9 @@
+<%- include("header") -%>
+<form action="/compose" method="post" class="container-fluid">
+	<label for="title"><h3>Title</h3></label><br>
+	<input type="text" name="title" required=""><br>
+	<label for="content"><h3>Content</h3></label><br>
+	<textarea name="content" id="" cols="60" rows="10" required></textarea><br>
+	<button type="submit">Push</button>
+</form>
+<%- include("footer") -%>
